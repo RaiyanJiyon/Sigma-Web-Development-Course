@@ -1,0 +1,23 @@
+/* Default Bulleted List */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Bulleted List with Different Style */
+ul.styled {
+    list-style-type: circle;
+}
+
+/* List with Custom Marker */
+ul.custom-marker {
+    list-style-image: url('bullet.png');
+}
+
+/* Indented List */
+ul.indented {
+    margin-left: 20px;
+}
+ul.indented ul {
+    margin-left: 20px;
+}
