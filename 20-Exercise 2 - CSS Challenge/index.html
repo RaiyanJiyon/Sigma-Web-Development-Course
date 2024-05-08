@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - CSS Challenge</title>
+
+    <!-- Internal CSS styling -->
+    <style>
+        /* Styling first paragraph inside a div */
+        div p:first-child {
+            background-color: yellow;
+            color: red;
+        }
+
+        /* Styling paragraphs inside a div except the first one */
+        div p:not(:first-child){
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- First div with paragraphs -->
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit cumque quas, labore possimus veritatis laborum porro explicabo laudantium quibusdam quos a dolorem consectetur nulla tenetur!</p>
+        <p>I am another paragraph</p>
+        <p>I am also another paragraph</p>
+    </div>
+
+    <!-- Second div with paragraphs -->
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit cumque quas, labore possimus veritatis laborum porro explicabo laudantium quibusdam quos a dolorem consectetur nulla tenetur!</p>
+        <p>I am another paragraph</p>
+        <p>I am also another paragraph</p>
+    </div>
+</body>
+</html>
