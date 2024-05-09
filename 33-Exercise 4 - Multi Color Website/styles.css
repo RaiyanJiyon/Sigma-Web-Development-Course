@@ -1,0 +1,46 @@
+:root {
+    --background-color : #333;
+    --color: #fff;
+    --hover-color: #ff6600;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: var(--background-color);
+    color: var(--color);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--color);
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--hover-color); /* Change to your desired hover color */
+  }
+  
