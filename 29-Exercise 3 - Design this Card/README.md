@@ -1,0 +1,5 @@
+# Exercise 3 - Design this Card
+
+card.png is a file which contains a card Image. 
+
+Write html and css code to design this card Using html
