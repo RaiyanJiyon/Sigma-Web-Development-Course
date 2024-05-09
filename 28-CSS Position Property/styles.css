@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  height: 300px;
+  border: 10px solid #ccc;
+}
+
+.static,
+.relative,
+.absolute,
+.fixed,
+.sticky {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.sticky {
+  position: sticky;
+  top: 20px;
+}
+
+/* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+/* transform: translate(0); */
+/* filter: invert(0); */
+/* perspective: 0em; */
