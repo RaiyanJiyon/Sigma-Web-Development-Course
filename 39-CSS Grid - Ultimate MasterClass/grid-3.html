@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid -3</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: repeat(4, 25%); */
+            /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .grid-container > div {
+            border: 2px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem expedita rerum voluptatibus, ipsa consectetur ad animi nostrum. Ab, necessitatibus sit.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, animi? Voluptate consectetur, illo architecto beatae libero nobis! Similique, nesciunt consequatur!</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laudantium tempore rem. Adipisci exercitationem, velit debitis iure eaque itaque! Accusantium.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae? Laudantium ipsa quibusdam alias nulla pariatur tempora ratione vero doloremque.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis enim minus delectus sint quae aliquam ad eligendi vel neque?</p>
+        </div>
+        <div class="item">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae eius natus dolorum assumenda voluptates odio corrupti, repellendus totam quasi doloribus?</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis enim minus delectus sint quae aliquam ad eligendi vel neque?</p>
+        </div>
+        <div class="item">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae eius natus dolorum assumenda voluptates odio corrupti, repellendus totam quasi doloribus?</p>
+        </div>
+    </div>
+</body>
+</html>

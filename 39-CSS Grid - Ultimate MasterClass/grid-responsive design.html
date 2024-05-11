@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Responsive Design</title>
+    <style>
+        /* CSS Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: aqua;
+            display: grid;
+            grid-template-rows: min-content auto min-content;
+            grid-template-areas:
+            'h'
+            'm'
+            'm'
+            'm'
+            'f'
+            ;
+        }
+
+        header {
+            grid-area: h;
+            background-color: pink;
+            width: 100%;
+            border: solid;
+            text-align: center;
+        }
+
+        main {
+            background-color: chocolate;
+            grid-area: m;
+            width: 100%;
+            height: 100%;
+        }
+
+        article {
+            display: grid;
+            grid-template-areas: 
+            's1 a1'
+            's2 a2'
+            's3 .'
+            ;
+            height: 100%;
+            border: solid;
+        }
+
+        section {
+            border: solid;
+            text-align: center;
+        }
+
+        aside {
+            background-color: hotpink;
+            border: solid;
+            text-align: center;
+        }
+
+        footer {
+            grid-area: f;
+            width: 100%;
+            display: grid;
+            grid-template-areas: 
+            'n1 n2'
+            ;
+            border: solid;
+            background-color: pink;
+            text-align: center;
+        }
+
+        #sec-1 {grid-area: s1;}
+        #sec-2 {grid-area: s2;}
+        #sec-3 {grid-area: s3;}
+
+        #aside-1 {grid-area: a1;}
+        #aside-2 {grid-area: a2;}
+
+        #nav-1 {grid-area: n1;}
+        #nav-2 {grid-area: n2;}
+
+        @media screen and (max-width: 600px) {
+            /* Responsive Layout */
+            article {
+                grid-template-areas: 
+                's1'
+                's2'
+                's3'
+                'a1'
+                'a2'
+                ;
+            }
+            footer {
+                grid-template-areas: 
+                'n1'
+                'n2'
+                ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>Header Nav</nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <article>
+            <!-- Sections -->
+            <section id="sec-1">Section 1</section>
+            <section id="sec-2">Section 2</section>
+            <section id="sec-3">Section 3</section>
+
+            <!-- Asides -->
+            <aside id="aside-1">Aside 1</aside>
+            <aside id="aside-2">Aside 2</aside>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <nav id="nav-1">Nav 1</nav>
+        <nav id="nav-2">Nav 2</nav>
+    </footer>
+</body>
+</html>
