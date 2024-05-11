@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+header nav ul li {
+    padding: 5px;
+    margin: 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header nav ul li a:hover {
+    color: greenyellow;
+    cursor: pointer;
+    background-color: rebeccapurple;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    position: relative;
+    margin-left: 60px;
+    bottom: 60px;
+}
+
+.logo-text {
+    font-size: 20px;
+}
+
+.logo-text-main {
+    position: relative;
+    font-size: 1.5rem;
+    bottom: 65px;
+    left: 10px;
+}
+
+.logo-text-sub {
+    position: relative;
+    bottom: 45px;
+    right: 80px;
+    font-size: 12px;
+}
+
+/* Content */
+.heading-line {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.para {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.download-link {
+    border: 2px solid black;
+    background-color: #09A6BD;
+    width: 250px;
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto; /* Center the button */
+}
+.link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
