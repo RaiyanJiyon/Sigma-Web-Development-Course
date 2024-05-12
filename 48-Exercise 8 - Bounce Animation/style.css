@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    border: 1px solid blue;
+    background-color: blue;
+    width: 80vw;
+    height: 80vh;
+}
+
+.ball {
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 70px;
+    width: 123px;
+    height: 123px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: bounce 4s ease 1s infinite forwards;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(175px, -250px);
+    }
+    50% {
+        transform: translate(350px, 0);
+    }
+    75% {
+        transform: translate(525px, -250px);
+    }
+    100% {
+        transform: translate(700px, 0);
+    }
+}
