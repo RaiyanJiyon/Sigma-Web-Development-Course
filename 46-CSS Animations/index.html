@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid rgba(255, 255, 255, 0.151);
+            background-color: aqua;
+            width: 60vw;
+            height: 80vh;
+        }
+
+        .box {
+            border: 2px solid rgb(36, 39, 39);
+            background-color: hotpink;
+            width: 6vw;
+            height: 8vh;
+/* 
+            animation-name: RaiyanAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-play-state: paused; */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: RaiyanAnimation 4s ease 1s infinite reverse forwards,
+                       JiyonAnimation 4s ease 1s infinite reverse;
+        }
+
+        @keyframes RaiyanAnimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                transform: translateX(1000px);
+                background-color: yellow;
+            }
+        }
+
+        @keyframes JiyonAnimation {
+            0% {
+                transform: rotate(100deg);
+            }
+            25% {
+                transform: rotate(200deg);
+            }
+            50% {
+                transform: rotate(300deg);
+            }
+            75% {
+                transform: rotate(400deg);
+            }
+            100% {
+                transform: rotate(500deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
