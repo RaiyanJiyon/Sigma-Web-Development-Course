@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI';
+    background-color: #FFFFFF;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI";
+}
+
+.logo img {
+  width: 164px;
+}
+
+.right ul {
+  display: flex;
+  gap: 34px;
+}
+
+.right ul li {
+  list-style: none;
+  /* align-items: center; */
+}
+
+.right ul li span {
+  display: flex;
+  padding: 0 5px;
+}
+
+.right ul li span a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.right ul li span a:hover {
+  color: greenyellow;
+  background-color: grey;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.title-text {
+    font-size: 3rem;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.star-img {
+    margin-top: 8px;
+    padding: 20px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-text {
+    font-size: 1.5rem;
+    text-justify: auto;
+    text-align: center;
+}
+
+.download-macos {
+    border: 1px solid #09A6BD;
+    border-radius: 5px;
+    background-color: #09A6BD;
+    color: #FFFFFF;
+    width: 300px;
+    height: 30px;
+    position: relative;
+    left: 450px;
+    /* padding: 5px; */
+}
+
+.download-macos a {
+    color: #FFFFFF;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-decoration: none;
+    font-size: large;
+    padding: 0 25px;
+}
+
+.UE-logo {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.down-text {
+    font-size: 1.5rem;
+}
+
+.item-1 {grid-area: i1;}
+.item-2 {grid-area: i2;}
+.item-3 {grid-area: i3;}
+.item-4 {grid-area: i4;}
+.item-5 {grid-area: i5;}
+.item-6 {grid-area: i6;}
+.item-7 {grid-area: i7;}
+.item-8 {grid-area: i8;}
+.item-9 {grid-area: i9;}
+.item-10 {grid-area: i10;}
+
+.grid-container {
+    display: grid;
+    margin: 40px;
+    grid-template-areas: 
+    'i1 i2 i3'
+    'i4 i5 i6'
+    'i7 i8 i9'
+    'i10 . .'
+    ;
+}
+
+
+.grid-container > div {
+    background-color: #F9F9F9;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+
+.item a {
+    border: 1px solid #81C780;
+    background-color: #53d751;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.item a:hover {
+    cursor: pointer;
+    background-color: #81C780;
+}
+
+.item p {
+    font-size: 12px;
+    /* margin-bottom: 60px; */
+    position: relative;
+    bottom: 10px;
+}
