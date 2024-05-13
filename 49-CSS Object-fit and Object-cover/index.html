@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-Fit and Object Cover</title>
+    <style>
+        .container1 {
+            width: 200px;
+            height: 200px;
+            border: 1pxm solid aqua;
+            background-color: rebeccapurple;
+        }
+
+        
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            object-fit: cover;
+            /* object-fit: fill; */
+            
+            object-position: center center;
+            /* object-position: 50% 50%; */
+            /* object-position: bottom right; */
+            
+        }
+
+        .container2 {
+            width: 300px;
+            height: 200px;
+            border: 1pxm solid aqua;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/039/654/181/non_2x/ai-generated-tranquil-sunset-reflects-on-water-nature-beauty-in-autumn-generated-by-ai-free-photo.jpg");
+            background-position: center center;
+            /* background-position: bottom right; */
+            background-clip: border-box;
+            background-repeat: no-repeat;
+        }
+        </style>
+</head>
+<body>
+    <div class="container1">
+        <img src="pic1.jpg" alt="Tree Picture">
+    </div>
+
+    <div class="container2">
+    </div>
+
+
+</body>
+</html>
