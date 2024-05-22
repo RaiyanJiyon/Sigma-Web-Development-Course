@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Bubbling Example</title>
+</head>
+<body>
+  <div id="outer" style="padding: 20px; border: 1px solid black;">
+    Outer Div
+    <div id="inner" style="padding: 20px; border: 1px solid red;">
+      Inner Div
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('outer').addEventListener('click', function() {
+      alert('Outer div clicked!');
+    });
+
+    document.getElementById('inner').addEventListener('click', function(event) {
+      alert('Inner div clicked!');
+      event.stopPropagation(); // Prevents the outer div click event
+    });
+  </script>
+</body>
+</html>
