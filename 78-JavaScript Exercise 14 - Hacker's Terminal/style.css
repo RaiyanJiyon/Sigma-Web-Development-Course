@@ -1,0 +1,27 @@
+body {
+  background-color: #0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.terminal {
+  background-color: black;
+  color: lime;
+  padding: 20px;
+  font-family: monospace;
+  width: 300px;
+  text-align: left;
+}
+
+#dots {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
